@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="websiteStyle.css">
+    <link href="https://fonts.cdnfonts.com/css/monaco" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+
+<body class="body_background">
+
+    <!-- start Nav Bar-->
+    <nav class="bar">
+
+        <h1 class="name_logo">SPACY</h1>
+
+        <ul>
+            <li> <a class="active" href="index.html">Home </a></li>
+        </ul>
+    </nav>
+    <!-- end Nav Bar-->
+    <div class="form-section">
+        <h1> Sign Up</h1>
+        <div class="form-borde"></div>
+        <form class="form-page" action="signup.php" method="post" id="signupForm">
+
+            <p><label id="labelForm"> Name <input id="signupName" name="name" type="text" class="form-text" placeholder="Your Name (only letters)"
+                        required />
+                </label></p>
+
+            <p><label id="labelForm"> Email <input id="signupEmail" name="email" type="text" class="form-text"
+                        placeholder="Your Email (Example: lina@gmail.com)" required />
+                </label></p>
+
+            <p><label id="labelForm">Password <input id="signupPassword" name="password" type="password"
+                        class="form-text" placeholder="Your Password (8 characters, one uppercase,one lowercase, and one special character)" required />
+                </label></p>
+
+
+            <p><label id="labelForm"> Password Repeat<input id="repeatedPassword" name="repeatPassword" type="password"
+                        class="form-text" placeholder="Repeat Password" required />
+
+                </label></p>
+
+            <button type="submit" class="form-button"> Create account </button>
+            <br>
+            <p>Already have account? <a href="login.html">Log in here</a>.</p>
+        </form>
+    </div>
+
+    
+    
+
+    <script src="signup.js"></script>
+</body>
+<footer class="fot">
+
+    <span id="email">Email:</span><a href="mailto:waad.alhashdi675@gmail.com" id="email">&#9993;</a>
+</footer>
+
+</html>

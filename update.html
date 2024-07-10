@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: rgba(53, 25, 137, 0.541);
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(79, 47, 142);
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="container">
+        <h2>Update Account</h2>
+        <form id="update-account-form" action="update.php" method="POST">
+            <input type="email" name="email" placeholder="Current Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="new_name" placeholder="New Name" required>
+            <input type="email" name="new_email" placeholder="New Email" required>
+            <button type="button" id="update-account-button">Update Account</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('update-account-button').addEventListener('click', function() {
+            if (confirm('Are you sure you want to update your account?')) {
+                document.getElementById('update-account-form').submit();
+            }
+        });
+    </script>
+</body>
+</html>

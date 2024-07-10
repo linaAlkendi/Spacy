@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="websiteStyle.css">
+  <link href="https://fonts.cdnfonts.com/css/monaco" rel="stylesheet">
+  <script src="script.js" ></script>
+</head>
+
+
+<body class="body_background" >
+
+  <nav class="bar">
+
+    <h1 class="name_logo">SPACY</h1>
+
+    <ul>
+      <li> <a href="index.html">Home </a></li>
+      <li> <a href="planetPage.html">Planets </a></li>
+      <li> <a href="galaxyPage.html">Galaxies </a></li>
+      <li> <a class="active" href="Feedback.html">Feedback </a></li>
+      <li> <a href="event.html">Events </a></li>
+      
+      <li> <a href="delete.html">Delete </a></li>
+      <li> <a href="update.html">Update </a></li>
+    </ul>
+  </nav>
+
+  <div class="form-section">
+    <h1 id="contact">Feedback</h1>
+    <div class="form-borde"></div>
+    <form id="feedbackForm" class="form-page" action="feedback.php" method="post">
+      <br>
+     <p id="labelForm"> <strong>Genedr:</strong>
+      <label >Female <input id="fradio" name="gender" type="radio" value="female" checked></label>
+      <label >Male <input id="mradio" name="gender" type="radio" value="male"></label> 
+      
+    </p>
+    <br>
+    <p><label id="labelForm" > <strong>Rate our site:</strong>
+      <select id="rating" name="rating" > 
+        <option selected> Excellent</option>
+        <option>Good</option>
+        <option> Okay</option>
+        <option> Bad</option>
+      </select>
+    </label></p>
+      <input name="email" id="contactEmail" type="text" class="form-text" placeholder="Your Email" required />
+      <textarea name="textarea" class="form-text" placeholder="Your Message" required></textarea>
+      <input class="form-button" type="submit" value="Send" onclick="return confirm('Are you sure you want to submit the form?')"/>
+      <input class="form-button" type="Reset" value="Clear"onclick="return confirm('Are you sure you want to reset the form?')" />
+    </form>
+  </div>
+  <footer class="fot">
+
+    <span id="email">Email:</span><a href="mailto:waad.alhashdi675@gmail.com" id="email">&#9993;</a>
+  </footer>
+
+ 
+</body>
+
+</html>

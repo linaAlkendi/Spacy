@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Astronomical Events</title>
+    <link rel="stylesheet" type="text/css" href="websiteStyle.css">
+    <script src="event.js" ></script>
+   
+</head>
+<body id="EventBody">
+
+    <nav class="bar">
+
+        <h1 class="name_logo">SPACY</h1>
+    
+        <ul>
+            <li> <a href="index.html">Home </a></li>
+            <li> <a href="planetPage.html">Planets </a></li>
+            <li> <a  href="galaxyPage.html">Galaxies </a></li>
+            <li> <a href="Feedback.html">Feedback </a></li>
+            <li> <a class="active" href="event.html">Events </a></li>
+            <li> <a href="delete.html">Delete </a></li>
+            <li> <a href="update.html">Update </a></li>
+        </ul>
+    </nav>
+
+    <div >
+        <h1 >Astronomical Events</h1>
+        <br>
+        <form id="EventForm" action="Events.php">
+            <label for="year">Enter a year:</label>
+            <input type="number" id="year" name="year" required>
+            <input     type="submit" value="Submit">
+        </form>
+        <div id="eventsTable"></div>
+    </div>
+
+    <footer class="fot">
+
+        <span id="email">Email:</span><a href="mailto:waad.alhashdi675@gmail.com" id="email">&#9993;</a>
+      </footer>
+</body>
+</html>
